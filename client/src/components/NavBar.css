@@ -1,0 +1,336 @@
+.nav-bar{
+    position:fixed;
+    top: 0;
+    background-color: #285533;
+    width: 200px;
+    height:100%;
+    z-index: 10;
+}
+.navSpace{
+    width: 200px;
+}
+
+.displayBlock{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+    margin: 30px;
+    margin-bottom: 0;
+}
+
+.xumekIsoLogo{
+    width: 100px;
+}
+
+.searchBar{
+    display: flex;
+    margin-bottom: 10%;
+    margin-left: 5%;
+}
+
+::placeholder{
+    color: #285533;
+}
+
+.searchInput{
+    width: 130px;
+    background-color: #4B9E60;
+    border: none;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    transition: .5s;
+}
+
+.searchInput:focus{
+    background-color: white;
+    outline: none ;
+    transition: .5s;
+}
+
+.searchBtn{
+    background-color: #4B9E60;
+    font-family: Roboto;
+    color: #285533;
+    font-size: 20px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.searchBtn:hover{
+    color: white;
+}
+.navoption{
+    font-family: Roboto;
+    font-weight: bold;
+    color: #4B9E60;
+    padding:5px ;
+    margin-top: 1px;
+    display: flex;
+    justify-content: space-between ;
+}
+
+.optionSelec{
+    color: white;
+    transition: .5s;
+}
+
+.arrow{
+    width: 10px;
+    transform: translateY(3px) translateX(-4px);
+    height: 15px;
+    background-color: #4B9E60;
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+    transition: .5s;
+}
+
+.circle{
+    width: 15px;
+    transform: translateY(3px) translateX(-2px);
+    height: 15px;
+    background-color: #4B9E60;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.lightArrow{
+    background-color: white;
+    transition: .5s;
+}
+
+.navoption:hover .arrow{
+    transform: translateY(3px) translateX(0);
+    transition: .5s;
+}
+
+.subOptionsContainer{
+    position: fixed;
+    background-color: #285533;
+    width: 200px;
+    transition: .8s;
+    border-radius: 0 10px 10px 0;
+    z-index: 10;
+}
+
+.subOption{
+    padding: 2px;
+    color: #4B9E60;
+    font-family: Roboto;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .6s;
+    text-align: start;
+    padding-left: 10px;
+}
+
+.subOption:hover{
+    color: white;
+    transition: .5s;
+}
+
+.out{
+    transform: translateX(200px);
+    transition: .6s;
+}
+
+.trabajo{
+    top:238px
+}
+
+.participa{
+    top:270px
+}
+
+.nosotres{
+    top:302px
+}
+
+.adminoptions{
+    top:334px;
+}
+
+.contactContainer{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.contact{
+    width: 40px;
+    filter:brightness(1);
+    transition: .3s;
+}
+
+.contact:hover{
+    transform: scale(1.1);
+    filter:brightness(5);
+    transition: .3s;
+}
+
+.donativeBtn{
+    background-color: #4B9E60;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.donativeBtn:hover{
+    transform: scale(1.1) translateX(-45%);
+    transition: .3s;
+}
+
+.separador{
+    width: 80%;
+    margin-left: 10%;
+    height: 1px;
+    background-color:#4b9e6070 ;
+}
+
+
+.hamNav{
+    display: none;
+}
+
+@media (max-width: 1280px){
+    .hamNav{
+        display: grid;
+        place-content: center;
+        position: fixed;
+        color: #4B9E60;
+        background-color: #285533;
+        left: 0;
+        height: 40px;
+        width: 40px;
+        font-size: 25px;
+        text-align: center;
+        border-radius: 0 0 5px 0;
+        z-index: 1;
+        transition: .5s;
+    }
+    .zindex1{
+        transform: translateX(-200px);
+        transition: .5s;
+    }
+    .optionNav{
+        z-index: 5;
+    }
+    .closeNav{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.205);
+        z-index: 5;
+    }
+    .navSpace{
+        display: none;
+    }
+}
+
+@media (max-width: 400px){
+    .nav-bar{
+        width: 50%;
+        font-size: 14px;
+    }
+    .subOptionsContainer{
+        width: 50%;
+    }
+    .out{
+        transform: translateX(100%);
+    }
+    .searchInput{
+        width: 60%;
+    }
+    .contact{
+        width: 30px;
+    }
+    .adminoptions{
+        display: none;
+    }
+    .adminResponsive{
+        display: none;
+    }
+    .trabajo{
+        top:235px
+    }
+    .participa{
+        top:263px
+    }
+    .nosotres{
+        top:295px
+    }
+}
+
+@media (max-width: 340px){
+    .nav-bar{
+        width: 50%;
+        font-size: 10px;
+    }
+    .logo{
+        width: 60px;
+        margin:10px;
+    }
+    .xumekIsoLogo{
+        width: 80px;
+    }
+    .subOptionsContainer{
+        font-size: 10px;
+    }
+    .searchInput{
+        width: 70%;
+        font-size: 10px;
+        padding:3px
+    }
+    .searchBtn{
+        font-size: 13px;
+    }
+    .trabajo{
+        top:160px
+    }
+    .participa{
+        top:185px
+    }
+    .nosotres{
+        top:208px
+    }
+    .contact{
+        width: 25px;
+    }
+    .adminoptions{
+        display: none;
+    }
+    .adminResponsive{
+        display: none;
+    }
+    .arrow{
+        height: 10px;
+        width: 7px;
+    }
+    .donativeBtn{
+        width: 70px;
+        height: 70px;
+        font-size: 20px;
+        border-radius: 50%;
+    }
+}
+
+@media (max-width: 300px) {
+    .donativeBtn{
+        display: none;
+    }
+}
+

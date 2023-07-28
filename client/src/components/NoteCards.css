@@ -1,0 +1,111 @@
+.cardsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+.seeMore{
+    border: none;
+    background-color: #4B9E60;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    color:#97c4a2;
+    transform: translateX(50%);
+    cursor: pointer;
+}
+
+.ellipsis{
+    display: flex;
+    justify-content: space-around;
+    transform: translateY(5px);
+    
+}
+
+.point1, .point2, .point3{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #97c4a2;
+    transition: .5s;
+}
+
+.seeMore:hover .point1{
+    animation: point1 .8s infinite;
+    transition: .5s;
+}
+
+.seeMore:hover .point2{
+    animation: point2 .8s infinite;
+    transition: .5s;
+}
+
+.seeMore:hover .point3{
+    animation: point3 .8s infinite;
+    transition: .5s;
+}
+
+@keyframes point1 {
+    0%{
+        transform: translateY(0px);
+    }
+    33%{
+        transform: translateY(-10px);
+    }
+    66%{
+        transform: translateY(0px) ;
+    }
+}
+
+@keyframes point2 {
+    17%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    82%{
+        transform: translateY(0px) ;
+    }
+}
+
+@keyframes point3 {
+    33%{
+        transform: translateY(0px);
+    }66%{
+        transform: translateY(-10px);
+    }99%{
+        transform: translateY(0px) ;
+    }
+}
+
+@media (max-width: 1000px){
+    .noteCardsContainerSuper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 800px){
+    .cardsContainer{
+        display: block;
+    }
+    .seeMore{
+        transform: translateX(0);
+    }
+}
+
+@media (max-width:300px){
+    .cardsContainer{
+        margin: 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}

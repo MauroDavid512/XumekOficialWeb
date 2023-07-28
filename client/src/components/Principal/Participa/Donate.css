@@ -1,0 +1,54 @@
+.donateTitle{
+    font-size: 30px;
+    font-weight: bold;
+    color:#4B9E60;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.textDonate{
+    font-size: 20px;
+}
+
+.donate{
+    margin-bottom: 50px;
+}
+
+.editDonateButton{
+    background-color: #4B9E60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+}
+
+.donativeImg{
+    width:100%;
+}
+
+.donativeCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    min-width: 200px;
+}
+
+.donativeCardContainer{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media (max-width: 650px){
+    .donativeCardContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .donativeCard{
+        margin-bottom: 30px;
+    }
+}

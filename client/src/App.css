@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+  display: flex;
+}
+
+
+
+
+.noSelect{
+  user-select: none;
+}
+
+.topspace{
+  margin-top:20px
+}
+
+/* .bottomspace{
+  height: 50px;
+} */
+
+
+
+
+

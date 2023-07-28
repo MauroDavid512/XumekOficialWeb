@@ -1,0 +1,251 @@
+.adminPanel{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+}
+
+.btnCont{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.adminSource{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-top: #4B9E60;
+    border-top-width: 1px;
+    border-top-style: solid;
+}
+
+.adminTitle{
+    margin-top: 50px;
+    font-size: x-large;
+    color: #4B9E60;
+    font-weight: bolder;
+}
+
+/* UserList styles */
+
+.titleList{
+    position: relative;
+}
+
+.usersList{
+    position: relative;
+    font-size: 18px;
+    display: flex;
+    top:40px;
+    color: rgb(1, 1, 131);
+    margin-bottom: 2px;
+    border-bottom-color: #4B9E60 ;
+    border-bottom-style: solid ;
+    border-bottom-width: 1px ;
+}
+
+.imgList{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
+
+.userName{
+    position: absolute;
+    left:5%
+}
+
+.userEmail{
+    position: absolute;
+    left: 30%;
+}
+
+.userAdmin{
+    position: absolute;
+    left: 75%;
+}
+
+.userPosition{
+    position: absolute;
+    left: 86%;
+}
+
+/* Articles List elements */
+
+.articleTitle{
+    position: absolute;
+    left: 25px;
+}
+
+.articleType{
+    position: absolute;
+    left: 400px;
+}
+
+.articleAutor{
+    position: absolute;
+    left: 570px
+}
+
+.articleDate{
+    position: absolute;
+    right: 70px;
+}
+
+.articleEdit{
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+
+.editArticleIcon{
+    color: blue;
+}
+
+.eliminateArticleIcon{
+    color: red;
+}
+
+.eliminateAsk{
+    position: absolute;
+    background-color: #4B9E60;
+    padding: 30px;
+    border-radius:10px ;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.eliminateBtnContainer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.eliminateBtn{
+    padding: 10px;
+    width: 120px;
+    border: none;
+    border-radius: 5px;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 15px;
+    color: #285533;
+    background-color: #97c4a2;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.eliminateBtn:hover{
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+.confirmEliminate:hover{
+    background-color: red;
+    color: white;
+    transition: .4s;
+}
+
+.cancelEliminate:hover{
+    background-color:rgb(2, 64, 156);
+    color: white;
+}
+
+.indicationAsk{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.homeAsk{
+    position: absolute;
+    
+    background-color: #285533;
+    padding: 30px;
+    width: 600px;
+    border-radius:10px ;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.one, .two, .three, .four, .five, .six{
+    
+    background-color: #4B9E60;
+    border-radius: 10px;
+    margin:5px;
+    cursor: pointer;
+    transition: .4s;
+    padding: 3%;
+
+}
+
+.one:hover, .two:hover, .three:hover, .four:hover, .five:hover, .six:hover{
+    background-color: #53b16a;
+    border-radius: 10px;
+    margin:5px;
+    transition: .4s
+}
+
+.one{
+    font-size: 80px;
+}
+
+.two, .three{
+    font-size: 60px;
+    width: 50%;
+}
+
+.four, .five, .six{
+    font-size: 40px;
+    width: 33%;
+}
+
+.two-three{
+    display: flex;
+}
+
+.four-six{
+    display: flex;
+}
+
+.selectNumber{
+    color: white;
+}
+
+
+.homeBtnContainer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.homeBtn{
+    padding: 10px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 15px;
+    color: #285533;
+    background-color: #97c4a2;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.homeBtn:hover{
+    transform: scale(1.1);
+}
+
+.cancelHome:hover{
+    transition: .4s;
+    background-color: red;
+    color: white;
+}
+
+.confirmHome:hover{
+    transition: .4s;
+    background-color:rgb(2, 64, 156);
+    color: white;
+}

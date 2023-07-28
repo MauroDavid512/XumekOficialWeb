@@ -1,0 +1,45 @@
+.logIn{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4B9E60;
+    padding: 5%;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-family: Roboto;
+    font-weight: bolder;
+    transition: .5s;
+}
+
+.btn{
+    background-color: #4B9E60;
+    width: 100px;
+    padding: 10%;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-family: Roboto;
+    font-weight: bolder;
+    transition: .5s;
+}
+
+.btn:hover{
+    transition: .5s;
+    transform: scale(1.1);
+}
+
+.logIn:hover{
+    transform: translateX(-50%) scale(1.1);
+    transition: .5s;
+}
+
+@media (max-width: 400px){
+    .logIn{
+        bottom: 0;
+        width: 100%;
+        border: none;
+        border-radius: 0;
+    }
+}

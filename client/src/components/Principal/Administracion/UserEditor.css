@@ -1,0 +1,158 @@
+.backgroundEditor{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.288);
+    z-index: 7;
+
+}
+.userEditor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 30px;
+    padding: 30px;
+    padding-top: 50px;
+    width: 700px;
+    border-radius: 10px;
+    background-color: #97c4a2;
+    color:#4B9E60;
+    font-size: 20px;
+}
+
+.closeBtn{
+    left: 50px;
+    top: 50px;
+    position: fixed;
+    border: none;
+    color: #4B9E60;
+    font-weight: bolder;
+    border-radius: 2px;
+    background-color: #285533;
+    z-index: 8;
+    transition: .3s;
+}
+
+.closeBtn:hover{
+    cursor: pointer;   
+    color: white;
+    background-color: red;
+    transition: .3s;
+}
+
+.personalInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+/* Genel stil */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 18px;
+    margin: 7.5px;
+  }
+  
+  /* Giriş stil */
+  .toggle-switch .toggle-input {
+    display: none;
+  }
+  
+  /* Anahtarın stilinin etrafındaki etiketin stil */
+  .toggle-switch .toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 18px;
+    background-color: #f32121;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Anahtarın yuvarlak kısmının stil */
+  .toggle-switch .toggle-label::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: 1.5px;
+    left: 1.5px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+  }
+  
+  /* Anahtarın etkin hale gelmesindeki stil değişiklikleri */
+  .toggle-switch .toggle-input:checked + .toggle-label {
+    background-color: #4CAF50;
+  }
+  
+  .toggle-switch .toggle-input:checked + .toggle-label::before {
+    transform: translateX(12px);
+  }
+  
+  /* Light tema */
+  .toggle-switch.light .toggle-label {
+    background-color: #BEBEBE;
+  }
+  
+  .toggle-switch.light .toggle-input:checked + .toggle-label {
+    background-color: #9B9B9B;
+  }
+  
+  .toggle-switch.light .toggle-input:checked + .toggle-label::before {
+    transform: translateX(4.5px);
+  }
+  
+  /* Dark tema */
+  .toggle-switch.dark .toggle-label {
+    background-color: #4B4B4B;
+  }
+  
+  .toggle-switch.dark .toggle-input:checked + .toggle-label {
+    background-color: #717171;
+  }
+  
+  .toggle-switch.dark .toggle-input:checked + .toggle-label::before {
+    transform: translateX(12px);
+  }
+
+  .aling{
+    display: flex;
+    align-items: center;
+  }
+
+  .posOptionContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  
+  .positionOption{
+    cursor: pointer;
+    display: flex;
+  }
+
+  .positionArrow{
+    position: absolute;
+    width: 10px;
+    height: 15px;
+    background-color: #4B9E60;
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+    transform: translateX(-20px) translateY(4px);
+  }
+
+  .none{
+    opacity: 0;
+  }
+

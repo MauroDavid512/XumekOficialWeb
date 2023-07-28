@@ -1,0 +1,118 @@
+body {
+  background-color: #4B9E60;
+  margin: 0;
+  font-family: Roboto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face{
+  font-family: Roboto;
+  src:url('../public/fuentes/RobotoSlab-VariableFont_wght.ttf')
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.bigContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.principalContainer{
+  display: flex; 
+  justify-content: center;
+  flex-direction: column;
+  margin: 30px;
+  margin-left: 60px;
+  padding: 30px;
+  width: calc(100% - 320px);
+  max-width: 1000px;
+  border-radius: 10px;
+  background-color: #97c4a2;
+}
+
+.principalTitle{
+  font-size: 50px;
+  font-weight: bold;
+  color: #4B9E60;
+}
+
+.bottomSpace{
+  position: absolute;
+  height: 40px;
+}
+
+.bottomSpaceRelative{
+  height: 200px;
+}
+
+.subtitle{
+  font-size: 35px;
+  font-weight: bold;
+  color: #4B9E60;
+  text-align: start;
+  margin-left: 20px;
+}
+
+.ql-snow .ql-editor {
+  font-family: "Roboto", sans-serif; /* Reemplaza "Roboto" con la ruta o nombre de tu fuente Roboto */
+}
+
+@media (max-width:1500px) {
+  .principalContainer{
+    margin: 0;
+    margin-left: 0;
+    width: 100%;
+    padding: 0;
+    padding-top: 30px;
+  }
+  body{
+    background-color: #97c4a2;
+  }
+}
+
+@media (max-width:1280px) {
+  .principalContainer{
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    width: 95%;
+  }
+}
+
+@media (max-width: 400px) {
+  .principalTitle{
+    font-size: 38px;
+    border-bottom: #4B9E60 solid 1px;
+  }
+  .subtitle{
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 300px) {
+  .principalTitle{
+    font-size: 30px;
+  }
+  .subtitle{
+    font-size: 25px;
+  }
+}
+
+
