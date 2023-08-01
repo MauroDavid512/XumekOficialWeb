@@ -88,8 +88,7 @@ function Home() {
         </div>
         : false
       }
-
-
+    
 
     </div>
   );
