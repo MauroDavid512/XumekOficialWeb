@@ -1,6 +1,6 @@
 const { Router } = require('express')
 const { Comment } = require('../db')
-const { getcomments, createcomment, updatecomment, deletecomment} = require('./utilscomments')
+const { getcomments, createcomment, updatecomment, deletecomment} = require('./utilsComments')
 const router = Router();
 
 
