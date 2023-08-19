@@ -68,20 +68,6 @@ function NavBar() {
 
     const { admin, position } = useSelector(state => state.user)
 
-    const creadorNotes = async (type) => {
-        let str = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, expedita veritatis maiores cum, porro veniam nesciunt facere quam iure laborum delectus nam tempora ullam ex ipsam et quibusdam. At, aliquid!"
-        let piece = str.slice(0, Math.random() * str.length)
-        await axios.post('/article/create', {
-            categories: [1],
-            content: "{\"ops\":[{\"insert\":\"adafdadafagaghahahaaadad\\n\"}]}",
-            coverImage: "https://res.cloudinary.com/maurodavid/image/upload/v1687971629/LMI/hljlqowo8lqy7yke9o41.png",
-            subhead: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum rem explicabo libero ipsa',
-            title: piece,
-            type: type,
-            user: "116287543170535244552"
-        })
-    }
-
     React.useEffect(() => {
         const hash = location.hash;
         if (hash) {
@@ -100,9 +86,6 @@ function NavBar() {
         setHamNav(window.innerWidth >= 1280)
     },[])
 
-    const handleHamNav = (bool) => {
-        setHamNav(bool)
-    }
 
     return (
         <div >
@@ -275,13 +258,6 @@ function NavBar() {
                         </div>
 
                         <Link to="/participa"><div className="donativeBtn">DONÁ</div></Link>
-
-                        <button onClick={e => creadorNotes("new")}>notas</button>
-                        <button onClick={e => creadorNotes("observatory")}>observatory</button>
-                        <button onClick={e => creadorNotes("inform")}>informe anual</button>
-                        <button onClick={e => creadorNotes("cases")}>casos</button>
-                        <button onClick={e => creadorNotes("aliances")}>alianzas</button>
-
 
                     </div>
                     <Login />
