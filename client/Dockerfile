@@ -5,7 +5,7 @@ FROM node:14
 WORKDIR /app
 
 # Copia los archivos del proyecto (asegúrate de tener un archivo package.json y package-lock.json)
-COPY path-to-frontend/package*.json ./
+COPY ./package*.json ./
 
 # Instala las dependencias
 RUN npm install
